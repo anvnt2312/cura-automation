@@ -1,0 +1,19 @@
+TestCaseID,Priority,Category,Scenario,Username,Password,ExpectedOutcome,ErrorMessage
+TC001,High,Positive,Valid login with correct credentials,John Doe,ThisIsNotAPassword,Success,
+TC002,High,Negative,Login with wrong password,John Doe,WrongPassword123,Failure,Login failed! Please ensure the username and password are valid!
+TC003,High,Negative,Login with invalid username,InvalidUser,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid!
+TC004,High,Negative,Login with both fields empty,,,Failure,Login failed! Please ensure the username and password are valid!
+TC005,High,Negative,Login with empty password,John Doe,,Failure,Login failed! Please ensure the username and password are valid!
+TC006,High,Negative,Login with empty username,,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid!
+TC007,High,Security,SQL injection in USERNAME field,' OR '1'='1,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid!
+TC008,High,Security,XSS script in USERNAME field,<script>alert(1)</script>,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid!
+TC009,High,Boundary,Very long USERNAME 255 chars,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid!
+TC010,High,Functional,USERNAME with trailing spaces,  John Doe  ,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid!
+TC011,High,Security,SQL injection in PASSWORD field,John Doe,' OR '1'='1,Failure,Login failed! Please ensure the username and password are valid!
+TC012,High,Security,XSS script in PASSWORD field,John Doe,<script>alert(1)</script>,Failure,Login failed! Please ensure the username and password are valid!
+TC013,High,Boundary,Very long PASSWORD 255 chars,John Doe,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,Failure,Login failed! Please ensure the username and password are valid!
+TC014,High,Functional,PASSWORD with trailing spaces,John Doe,  ThisIsNotAPassword  ,Failure,Login failed! Please ensure the username and password are valid!
+TC015,High,Functional,Correct password wrong case,John Doe,THISISNOTAPASSWORD,Failure,Login failed! Please ensure the username and password are valid!
+TC016,High,Boundary,Single character username,J,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid!
+TC017,High,Boundary,Single character password,John Doe,T,Failure,Login failed! Please ensure the username and password are valid!
+TC018,High,Security,Special characters in both fields,John@#$%,Pass!@#$%,Failure,Login failed! Please ensure the username and password are valid!

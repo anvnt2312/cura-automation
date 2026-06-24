@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Data-driven login test covering all test scenarios: happy path, invalid credentials, empty inputs, boundary values, equivalence partitions, security risks, and usability checks. Reads from LoginTestData.csv and iterates through each row to execute dynamic test steps.</description>
+   <name>TC_Login_DataDriven</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d3a5f8e2-9c1b-4a8f-b9d2-7e6c4f1a2b3d</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>f4e89c32-95a3-4309-8edf-e4d7d0f9846a</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/csv</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>f4e89c32-95a3-4309-8edf-e4d7d0f9846a</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>username</value>
+      <variableId>d47c38e7-7a09-4721-9799-6da238a7c867</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>f4e89c32-95a3-4309-8edf-e4d7d0f9846a</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>password</value>
+      <variableId>b44829cb-0856-4ae9-a32a-9e73748cc828</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>f4e89c32-95a3-4309-8edf-e4d7d0f9846a</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>expected</value>
+      <variableId>3ff46212-86d4-4035-88f6-e8580aad6557</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d47c38e7-7a09-4721-9799-6da238a7c867</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b44829cb-0856-4ae9-a32a-9e73748cc828</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3ff46212-86d4-4035-88f6-e8580aad6557</id>
+      <masked>false</masked>
+      <name>expected</name>
+   </variable>
+</TestCaseEntity>

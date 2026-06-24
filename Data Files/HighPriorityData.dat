@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>HighPriorityData</name>
+   <tag></tag>
+   <connectionProperties/>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator>COMMA</csvSeperator>
+   <dataFileGUID>1ebfbb63-3476-46df-80a1-e1131c9207f5</dataFileGUID>
+   <dataSourceUrl>C:\Users\avo24\Katalon Studio\Test project\Data Files\HighPriorityTestData.csv</dataSourceUrl>
+   <driver>CSV</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

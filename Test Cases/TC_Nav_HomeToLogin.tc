@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Nav_HomeToLogin</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>13bfa193-b5df-42c3-b994-bc00cbbd992a</testCaseGuid>
+</TestCaseEntity>

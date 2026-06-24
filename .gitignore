@@ -1,0 +1,29 @@
+# ============================================
+# Katalon .gitignore - chặn file rác
+# ============================================
+
+# Thư mục build/cache của Katalon
+bin/
+Libs/
+.cache/
+.settings/
+settings/
+
+# Report HTML ở thư mục gốc (các file dạng 20260617_xxxxx.html)
+*.html
+
+# Thư mục Reports
+Reports/
+
+# File tạm / cấu hình runtime
+cookies.txt
+console.properties
+*.log
+*.tmp
+
+# File hệ thống
+.DS_Store
+Thumbs.db
+
+# File gitignore thừa (không dấu chấm) nếu có
+/gitignore

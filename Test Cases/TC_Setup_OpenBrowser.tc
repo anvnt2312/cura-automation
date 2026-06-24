@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Setup_OpenBrowser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fe7e400f-51ed-4b87-bf9c-f32bfc743353</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>High-Priority Login Regression Test Suite - Executes only HIGH priority test cases from LoginTestData.csv. Covers: happy path, critical invalid credential scenarios, empty input validation, critical security risks (SQL injection, XSS), and error message accuracy. Designed for quick regression cycles in CI/CD pipelines. Execution time: ~5-7 minutes.</description>
+   <name>TC_Login_HighPriorityRegression</name>
+   <tag></tag>
+   <comment>Quick regression for critical login functionality</comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a5f8e2d3-1c9b-4a8f-9bd2-6c4f1a2b3d7e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,46 @@
+# ============================================================
+# GitHub Actions Workflow cho Katalon Studio - Project CURA
+# Đặt file này tại: .github/workflows/katalon.yml trong repo
+# ============================================================
+
+name: Katalon CI   # Tên pipeline (hiện trên tab Actions của GitHub)
+
+# --- KHI NÀO CHẠY (trigger) ---
+on:
+  push:
+    branches: [ main ]        # Chạy khi push lên nhánh main
+  pull_request:
+    branches: [ main ]        # Chạy khi tạo pull request vào main
+  workflow_dispatch:          # Cho phép bấm nút chạy thủ công trên GitHub
+
+# --- CÁC CÔNG VIỆC (jobs) ---
+jobs:
+  katalon-test:
+    runs-on: windows-latest   # Máy ảo Windows (Katalon chạy tốt trên Windows)
+
+    steps:
+      # Bước 1: Lấy code từ repo về máy ảo
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Bước 2: Chạy Katalon Studio test
+      - name: Run Katalon Tests
+        uses: katalon-studio/katalon-studio-github-action@v4.0
+        with:
+          version: '11.2.1'                       # Phiên bản Katalon (khớp máy bạn)
+          projectPath: '${{ github.workspace }}'  # Đường dẫn project (gốc repo)
+          args: >
+            -noSplash
+            -retry=0
+            -testSuitePath="Test Suites/TS_Smoke"
+            -browserType="Chrome (headless)"
+            -apiKey=${{ secrets.KATALON_API_KEY }}
+            --config -webui.autoUpdateDrivers=true
+
+      # Bước 3: Lưu lại report (để tải về xem sau khi chạy)
+      - name: Upload Report
+        if: always()                # Luôn chạy, kể cả khi test fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: katalon-report
+          path: Reports/

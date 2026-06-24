@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Boundary_LongInput</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bce10232-96a8-4543-b0d0-f79641ad3dab</testCaseGuid>
+</TestCaseEntity>

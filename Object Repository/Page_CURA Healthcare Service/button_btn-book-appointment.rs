@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>Book Appointment button visible after successful login</description>
+   <name>button_btn-book-appointment</name>
+   <tag></tag>
+   <elementGuidId>c87f6c7d-1cce-4c1a-9b8e-6a7f4d6c2e5f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id='btn-book-appointment']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#btn-book-appointment</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btn-book-appointment</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>submit</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default</value>
+   </webElementProperties>
+</WebElementEntity>

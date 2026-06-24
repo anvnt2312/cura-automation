@@ -1,0 +1,6 @@
+username,password,expected
+John Doe,ThisIsNotAPassword,success
+invalid,wrong,error
+,wrong,error
+John Doe,,error
+,,error

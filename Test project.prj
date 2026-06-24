@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description>this is a demo</description>
+   <name>Test project</name>
+   <tag></tag>
+   <UUID>e71d8d85-40e8-496a-8e14-b9766858e715</UUID>
+   <createdEdition>ENTERPRISE</createdEdition>
+   <createdVersion>11.2.1</createdVersion>
+   <freeLicense>false</freeLicense>
+   <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>ENTERPRISE</modifiedEdition>
+   <modifiedVersion>11.2.1</modifiedVersion>
+   <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\avo24\Katalon Studio\Test project\Test project.prj</projectFileLocation>
+   <sourceContent>
+      <sourceFolderList>
+         <sourceFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </sourceFolderConfiguration>
+      </sourceFolderList>
+      <systemFolderList>
+         <systemFolderConfiguration>
+            <url>Include/scripts/groovy</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/features</url>
+         </systemFolderConfiguration>
+         <systemFolderConfiguration>
+            <url>Include/config</url>
+         </systemFolderConfiguration>
+      </systemFolderList>
+   </sourceContent>
+   <timeStampInProperties>false</timeStampInProperties>
+   <type>WEBUI</type>
+</Project>

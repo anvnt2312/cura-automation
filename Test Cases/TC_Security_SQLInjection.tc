@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Security_SQLInjection</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9f4166cb-b6f6-4dc7-a90e-8458ece2ef22</testCaseGuid>
+</TestCaseEntity>

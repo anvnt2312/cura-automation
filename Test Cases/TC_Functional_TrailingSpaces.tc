@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Functional_TrailingSpaces</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fd39a53a-987c-4709-b956-6cce37817c05</testCaseGuid>
+</TestCaseEntity>

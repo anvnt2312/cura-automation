@@ -1,0 +1,27 @@
+TestCaseID,Category,Scenario,Username,Password,ExpectedOutcome,ErrorMessage,Priority
+TC_Login_Happy_ValidCredentials,Happy Path,Valid credentials,John Doe,ThisIsNotAPassword,Success,,High
+TC_Login_Invalid_InvalidUser_ValidPass,Invalid Credentials,Invalid username + valid password,invalid_user,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Invalid_ValidUser_InvalidPass,Invalid Credentials,Valid username + invalid password,John Doe,wrongPassword,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Invalid_InvalidUser_InvalidPass,Invalid Credentials,Both invalid,invalid_user,wrongPassword,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Empty_Username,Empty Inputs,Empty username,,,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Empty_Password,Empty Inputs,Empty password,John Doe,,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Empty_Both,Empty Inputs,Both empty,,,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Boundary_UsernameMinLength,Boundary Value,Username 1 char,a,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,Medium
+TC_Login_Boundary_PasswordMinLength,Boundary Value,Password 1 char,John Doe,x,Failure,Login failed! Please ensure the username and password are valid.,Medium
+TC_Login_Boundary_UsernameMaxLength,Boundary Value,Username 255 chars,abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,Medium
+TC_Login_Boundary_LeadingSpaceUsername,Boundary Value,Username with leading space, John Doe,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,Medium
+TC_Login_Boundary_TrailingSpacePassword,Boundary Value,Password with trailing space,John Doe,ThisIsNotAPassword ,Failure,Login failed! Please ensure the username and password are valid.,Medium
+TC_Login_Equiv_AlphanumericUser,Equivalence Partitioning,Alphanumeric username,user123,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,Low
+TC_Login_Equiv_SpecialCharUser,Equivalence Partitioning,Username with special chars,user@#$,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,Low
+TC_Login_Equiv_NumericPassword,Equivalence Partitioning,Numeric password,John Doe,12345678,Failure,Login failed! Please ensure the username and password are valid.,Low
+TC_Login_Equiv_SpecialCharPassword,Equivalence Partitioning,Password with special chars,John Doe,P@ssw0rd!,Failure,Login failed! Please ensure the username and password are valid.,Low
+TC_Login_Security_SQLInjection_Username,Security,SQL Injection in username,' OR '1'='1,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Security_SQLInjection_Password,Security,SQL Injection in password,John Doe,' OR '1'='1,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Security_XSS_Username,Security,XSS script in username,<script>alert(1)</script>,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Security_XSS_Password,Security,XSS img tag in password,John Doe,<img src=x onerror=alert(1)>,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Security_LongPayload,Security,Extremely long input,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,Medium
+TC_Login_Usability_ErrorMessageAccuracy,Usability,Error message text verification,invalid,invalid,Failure,Login failed! Please ensure the username and password are valid.,High
+TC_Login_Usability_WhitespaceUsername,Usability,Username only spaces,   ,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,Medium
+TC_Login_Usability_WhitespacePassword,Usability,Password only spaces,John Doe,   ,Failure,Login failed! Please ensure the username and password are valid.,Medium
+TC_Login_Usability_UnicodeUsername,Usability,Unicode characters in username,用户名,ThisIsNotAPassword,Failure,Login failed! Please ensure the username and password are valid.,Low
+TC_Login_Usability_UnicodePassword,Usability,Unicode characters in password,John Doe,密码123,Failure,Login failed! Please ensure the username and password are valid.,Low
